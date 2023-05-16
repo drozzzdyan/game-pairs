@@ -1,0 +1,135 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.container {
+  --container: 600px;
+  margin: 0 max(calc((100% - var(--container)) / 2), 20px);
+}
+
+.game-form {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.game-form__input {
+  border: 1px solid #999;
+  margin-right: 20px;
+  width: 150px;
+  text-align: center;
+  font-size: 12px;
+  outline: none;
+  color: #999;
+}
+
+.game-form__input:focus {
+  border-color: orange;
+  color: orange;
+}
+
+.game-form__input:hover {
+  border-color: orange;
+  color: orange;
+}
+
+.game-form__input:active {
+  border-color: darkorange;
+}
+
+.game-form__input::placeholder {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+.game-form__btn {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 28px;
+  border: 1px solid #777;
+  background-color: transparent;
+  color: #777;
+}
+
+.game-form__btn:focus {
+  border-color: orange;
+}
+
+.game-form__btn:hover {
+  border-color: orange;
+  color: orange;
+}
+
+.game-form__btn:active {
+  border-color: darkorange;
+}
+
+/* Стили карточек */
+
+.space-cards {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 98%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #999;
+  outline: none;
+  transition: border .08s ease-in-out;
+  cursor: pointer;
+  font-family: 'Tourney', cursive;
+}
+
+.card:focus {
+  border: 3px solid orange;
+}
+
+.card:hover {
+  border: 3px solid orange;
+}
+
+.card:active {
+  border: 3px solid darkorange;
+}
+
+/* .card:not(:nth-child(8n)) {
+  margin-right: 20px;
+}
+
+.card:nth-child(8n) {
+  margin-right: auto;
+} */
+
+.inner-card {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.hide {
+  display: none;
+  color: transparent;
+}
+
+.success {
+  background-color: rgba(200, 160, 0, 0.444);
+  border-color: transparent;
+  cursor: no-drop;
+}
+
+.win {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  width: 50%;
+  background-color: rgba(67, 200, 0, 0.444);
+  text-align: center;
+}
